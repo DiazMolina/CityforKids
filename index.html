@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="ThemeStarz">
+
+    <link href='http://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+    <link href="assets/fonts/font-awesome.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/bootstrap-select.min.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/jquery.slider.min.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+
+    <title>City for Kids</title>
+
+</head>
+
+<body class="page-homepage map-google" id="page-top" data-spy="scroll" data-target=".navigation" data-offset="90">
+<!-- Wrapper -->
+<div class="wrapper">
+
+    <div class="navigation">
+        <div class="secondary-navigation">
+            <div class="container">
+                <div class="contact">
+                    <figure><strong>Phone:</strong>0000</figure>
+                    <figure><strong>Email:</strong>0000</figure>
+                </div>
+                <div class="user-area">
+                  
+                    <div class="language-bar">
+                        <a href="#"><img src="assets/img/flags/es.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <header class="navbar" id="top" role="banner">
+                <div class="navbar-header">
+                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <div class="navbar-brand nav" id="brand">
+                        <a href="index-google-map-fullscreen.html"><img src="assets/img/logo.png" alt="brand"></a>
+                    </div>
+                </div>
+                <nav class="collapse navbar-collapse bs-navbar-collapse navbar-right" role="navigation">
+                    <ul class="nav navbar-nav">
+                        <li class="child-navigation"><a href="#">Inicio</a>
+
+                        </li>
+                        <li><a href="">Contacto</a></li>
+                    </ul>
+                </nav><!-- /.navbar collapse-->
+                <div class="add-your-property">
+                    <a href="submit.html" class="btn btn-default"><i class="fa fa-plus"></i><span class="text">Agregar marker</span></a>
+                </div>
+            </header><!-- /.navbar -->
+        </div><!-- /.container -->
+    </div><!-- /.navigation -->
+
+    <div class="container">
+        <div class="geo-location-wrapper">
+            <span class="btn geo-location"><i class="fa fa-map-marker"></i><span class="text">Busca mi poscicion</span></span>
+        </div>
+    </div>
+
+    <!-- Map -->
+    <div id="map"></div>
+    <!-- end Map -->
+
+    <!-- Search Box -->
+    <div class="search-box-wrapper">
+        <div class="search-box-inner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-4">
+                        <div class="search-box map">
+                            <form role="form" id="form-map" class="form-map form-search">
+                                <h2>City for Kids</h2>
+                               
+                                <div class="form-group">
+                                    <select id = "itemsd" >
+                                        <option value="">Distrito</option>
+                                        <option value="Lurin">Lurin</option>
+                                        <option value="Pachacamac">Pachacamac</option>
+                                        <option value="3">Villa el Salvador</option>
+                                        <option value="4">Punta Hermosa</option>
+                                        <option value="5">Punta Negra</option>
+                                    </select>
+
+                                </div><!-- /.form-group -->
+                                <div class="form-group">
+                                    <select id="categoria">
+                                        <option value="Todos">Categoria</option>
+                                        <option value="Parque">Parque</option>
+                                        <option value="Guarderia">Guarderia</option>
+                                        <option value="Museo">Museo</option>
+                                    </select>
+                                </div><!-- /.form-group -->
+                           
+                            
+                                
+                            </form><!-- /#form-map -->
+                            <div class="form-group">
+                                    <button id="buscar" class="btn btn-default" >Buscar</button>
+                                </div><!-- /.form-group -->
+                        </div><!-- /.search-box.map -->
+                    </div><!-- /.col-md-3 -->
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+        </div><!-- /.search-box-inner -->
+    </div>
+    <!-- end Search Box -->
+
+    <!-- Page Content -->
+    <div id="page-content">
+        <section id="banner">
+            <div class="block has-dark-background background-color-default-darker center text-banner">
+                <div class="container">
+                    <h1 class="no-bottom-margin no-border">Test!</h1>
+                </div>
+            </div>
+        </section><!-- /#banner -->
+    </div>
+    <!-- end Page Content -->
+    <!-- Page Footer -->
+    <footer id="page-footer">
+        <div class="inner">
+            <aside id="footer-main">
+            </aside><!-- /#footer-main -->
+            <aside id="footer-thumbnails" class="footer-thumbnails"></aside><!-- /#footer-thumbnails -->
+            <aside id="footer-copyright">
+                <div class="container">
+                    <span>Copyright © 2013. All Rights Reserved.</span>
+                    <span class="pull-right"><a href="#page-top" class="roll">Go to top</a></span>
+                </div>
+            </aside>
+        </div><!-- /.inner -->
+    </footer>
+    <!-- end Page Footer -->
+</div>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
+  <script src="assets/js/main.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=Your Key000000000000&callback=initMap">
+  </script>
+<script type="text/javascript" src="assets/js/jquery-2.1.0.min.js"></script>
+
+
+<script type="text/javascript" src="assets/js/smoothscroll.js"></script>
+
+<script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
+
+<script type="text/javascript" src="assets/js/tmpl.js"></script>
+<script type="text/javascript" src="assets/js/jquery.dependClass-0.1.js"></script>
+<script type="text/javascript" src="assets/js/draggable-0.1.js"></script>
+<script type="text/javascript" src="assets/js/jquery.slider.js"></script>
+<script type="text/javascript" src="assets/js/markerclusterer_packed.js"></script>
+
+<script type="text/javascript" src="assets/js/custom.js"></script>
+<!--[if gt IE 8]>
+<script type="text/javascript" src="assets/js/ie.js"></script>
+<![endif]-->
+
+</body>
+</html>
